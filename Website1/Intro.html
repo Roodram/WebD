@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Website | Home</title>
+	<link rel="stylesheet" type="text/css" href="decor.css">
+	
+</head>
+<body >
+<div class = "IDK" >
+	<h1>
+		<img id = "head" src="./Hotel Making/images/logo2.png" alt="Hotel Logo" align="left" hspace="5%" vspace="5%">
+	</h1>
+	
+	<div class="contacts">
+		<h3 align="left">
+			<img src="./Hotel Making/images/phone.png">
+			CALL US : <a id = "contact" href=""> 980XXXXXXX</a>
+			<br>
+			<img src="./Hotel Making/images/pointer.png">
+			GPA : <a id = "contact" href=""> VIEW MAP</a>
+			<br>
+			BROUGHT TO YOU BY: <a id = "contact" href="https://code-projects.org/"> CODE-PROJECTS</a>
+			<br>
+
+		</h3>
+	</div>
+</div>
+<div class = "IDK1">
+	<a class="Buttons" href="Intro.html" >
+	<button >
+		HOME
+	</button>
+	</a>
+	<a class="Buttons" href="" >
+	<button >
+		ABOUT
+	</button>
+	</a>
+	<a class="Buttons" href="" >
+	<button >
+		SERVICES
+	</button>
+	</a>
+	<a class="Buttons" href="" >
+	<button >
+		GALLERY
+	</button>
+	</a>
+	<a class="Buttons" href="" >
+	<button >
+		CONTACT
+	</button>
+	</a>
+</div>
+<div class="IDK2">
+	<img id="slider" width="100%" height="100%">
+
+</div>
+
+<div class="IDK3">
+	<h1 id="MOTTO"><sup><img src="./Hotel Making/images/quote-1.png"></sup>YOUR HOTEL MOTTO<sup><img src="./Hotel Making/images/quote-2.png"></sup><h1>
+</div>
+<div class="IDK4">
+	<div class = "IDK4A" align="center">
+		<img class="round" src="./Hotel Making/images/icon1.png">
+	</div>
+	<div class="IDK4B">
+		<h2> BEST FOOD EVER</h2>
+		<h3> DESCRIPTION </h3>
+		<h3> READ MORE </h3>
+	</div>
+	<div class = "IDK4A" >
+		<img class="round" src="./Hotel Making/images/icon2.png">
+	</div>
+	<div class="IDK4B">
+		<h2> 24X7 PHONE SUPPORT</h2>
+		<h3> "DESCRIPTION" </h3>
+		<h3> READ MORE </h3>
+	</div>
+	<div  class = "IDK4A">
+		<img class="round" src="./Hotel Making/images/icon3.png">
+	</div>
+	<div class="IDK4B">
+		<h2> BEST ROOM SERVICES</h2>
+		<h3> "DESCRIPTION" </h3>
+		<h3> READ MORE </h3>
+	</div>
+
+</div>
+<script type="text/javascript">
+	
+var sliders = [
+	"./Hotel Making/images/slider1.jpg",
+	"./Hotel Making/images/slider2.jpg",
+	"./Hotel Making/images/slider3.jpg"
+];
+
+var image1 = document.getElementById("slider");
+
+var i=0;
+function changeImage() {
+	image1.src = sliders[i%3];
+	i = i+1;
+
+	
+}
+
+function change(){
+
+	setInterval(changeImage,5000);
+}
+change();
+
+</script>
+</body>
+</html>
